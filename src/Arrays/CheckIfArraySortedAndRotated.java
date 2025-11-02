@@ -1,5 +1,5 @@
 //LeetCode 1752
-public class Arrays_CheckArraySorted {
+public class CheckIfArraySortedAndRotated {
     static boolean check(int arr[], int n) { //Brute Force Approach
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
