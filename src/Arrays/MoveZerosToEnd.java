@@ -1,6 +1,7 @@
+//Leetcode 283
 import java.util.ArrayList;
 
-public class Arrays_MoveZerosToEnd {
+public class MoveZerosToEnd {
     public static int[] moveZeros(int n, int[] a) {      //brute force
         ArrayList<Integer> temp = new ArrayList<>();
 
