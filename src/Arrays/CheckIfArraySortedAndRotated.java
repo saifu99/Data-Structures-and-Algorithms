@@ -1,6 +1,6 @@
 //LeetCode 1752
 public class Arrays_CheckArraySorted {
-    static boolean brute(int arr[], int n) { //Brute Force Approach
+    static boolean check(int arr[], int n) { //Brute Force Approach
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[i])
