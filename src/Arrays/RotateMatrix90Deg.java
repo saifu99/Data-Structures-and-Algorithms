@@ -1,4 +1,5 @@
-public class Arrays_RotateMatrix90Deg {
+//Leetcode 189
+public class RotateMatrix90Deg {
     static int[][] rotate(int[][] matrix) {
         int n = matrix.length;
         int[][] rotated = new int[n][n];
