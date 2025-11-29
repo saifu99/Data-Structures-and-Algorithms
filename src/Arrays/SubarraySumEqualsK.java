@@ -23,7 +23,7 @@ public class SubarraySumEqualsK {
                 Map<Integer, Integer> map = new HashMap<>();
                 map.put(0,1);
                 for(int i : nums){
-                    curr+=i;
+                    curr += i;
                     res += map.getOrDefault(curr-k,0);
                     map.put(curr,map.getOrDefault(curr,0)+1);
                 }
