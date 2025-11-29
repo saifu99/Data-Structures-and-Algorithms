@@ -1,6 +1,6 @@
 public class MatrixCanBeObtainedByRotation {
     //Leetcode 1886
-    public static boolean findRotation(int[][] mat, int[][] target) {
+    public static boolean findRotationBruteForce(int[][] mat, int[][] target) {
                 int n=mat.length;
                 for(int count=0; count<4; count++) { //rotation counter
 
@@ -33,7 +33,7 @@ public class MatrixCanBeObtainedByRotation {
         int mat[][] = {{0,0,0},{0,1,0},{1,1,1}};
         int target[][] = {{1,1,1},{0,1,0},{0,0,0}};
 
-        boolean canRotate = MatrixCanBeObtainedByRotation.findRotation(mat, target);
+        boolean canRotate = MatrixCanBeObtainedByRotation.findRotationBruteForce(mat, target);
         System.out.println("Can matrix be rotated to match target? " + canRotate);
 
         System.out.println("Matrix after last rotation:");
