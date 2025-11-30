@@ -12,7 +12,7 @@ public class BS_KthMissingPositiveNum {
     }
 
     public static void main(String[] args) {
-        int[] arr = {2,3,4,7,11};
-        System.out.println("The missing number is: "+findKthPositiveBruteForce(arr,5));
+        int[] arr = {4, 7, 9, 10};
+        System.out.println("The missing number is: "+findKthPositiveBruteForce(arr,4));
     }
 }
