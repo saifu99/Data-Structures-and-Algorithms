@@ -1,13 +1,13 @@
-import java.io.FilterOutputStream;
-
-public class BS_PeakElementInArr {
+//Leetcode 162
+public class FindPeakElement {
     static int findPeakElement(int[] nums) {
-        int left = 0, right = nums.length - 1;
-        while (left < right) {
+        int left=0, right=nums.length-1;
+
+        while(left < right) {
             int mid = left + (right - left) / 2;
-            if (nums[mid] > nums[mid + 1]) {
+            if (nums[mid] > nums[mid+1]) {
                 right = mid;
-            } else {
+            }else {
                 left = mid + 1;
             }
         }
