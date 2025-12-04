@@ -1,5 +1,6 @@
-public class BS_MinimumInRotatedSortedArr {
-    static int finMin(int[] arr) {   //Brute force
+//Leetcode 153
+public class FindMinimumInRotatedSortedArray {
+    static int finMinBruteForce(int[] arr) {   //Brute force
         int n = arr.length;
         int mini = Integer.MAX_VALUE;
 
@@ -9,8 +10,10 @@ public class BS_MinimumInRotatedSortedArr {
         return mini;
     }
 
+
+
     public static void main(String[] args) {
         int[] arr = {4, 5, 6, 7, 0, 1, 2, 3};
-        System.out.println("The minimum element is: "+finMin(arr));
+        System.out.println("The minimum element is: "+finMinBruteForce(arr));
     }
 }
