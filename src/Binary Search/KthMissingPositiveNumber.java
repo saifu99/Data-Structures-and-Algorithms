@@ -1,5 +1,5 @@
 //LeetCode 1539
-public class BS_KthMissingPositiveNum {
+public class KthMissingPositiveNumber {
     static int findKthPositiveBruteForce(int[] arr, int k){
         for(int i=0; i<arr.length; i++){
             if(arr[i] <= k){
