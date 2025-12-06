@@ -2,7 +2,7 @@
 public class SqrtOfNumber {
     public static int mySqrtOptimal(int x){
         int low=1, high=x;
-        
+
         while(low <= high){
             int mid =low + (high-low)/2;
             long square = (long) mid * mid;
