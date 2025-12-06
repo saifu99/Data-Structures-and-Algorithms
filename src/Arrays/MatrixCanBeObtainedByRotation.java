@@ -5,11 +5,11 @@ public class MatrixCanBeObtainedByRotation {
                 for(int count=0; count<4; count++) { //rotation counter
 
                     //check mat matches target
-                    boolean same = true;
-                    for(int i=0; i<n && same; i++)
+                    boolean match = true;
+                    for(int i=0; i<n && match; i++)
                         for (int j=0; j<n; j++)
-                            same &= (mat[i][j] == target[i][j]);
-                    if(same) return true;
+                            match &= (mat[i][j] == target[i][j]);
+                            if(match) return true;
 
                     for(int i=0; i<n; i++) {
                         for(int j=i; j<n; j++) {
