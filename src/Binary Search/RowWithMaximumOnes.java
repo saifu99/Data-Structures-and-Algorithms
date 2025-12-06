@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class RowWithMaximumOnes {
     public static int[] rowAndMaximumOnes(int[][] mat){
         int row=mat.length, col=mat[0].length;
-        int rowIndex=-1, maxCount=-1;
+        int rowIndex=-1, maxCount=-1; //track row with max 1s and the count
 
         for (int i=0; i<row; i++){
             int count=0;
