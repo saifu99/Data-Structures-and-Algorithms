@@ -1,4 +1,4 @@
-public class Recursion_ReverseArray {
+public class RecursionReverseArray {
     static void printArray(int[] arr, int n) {
         System.out.print("Reversed array is: ");
         for (int i = 0; i < n; i++) {
