@@ -1,14 +1,14 @@
 //Leetcode 151
 public class ReverseWordsInString {
     public static String reverseWords(String s) {
-        StringBuilder out = new StringBuilder();
-        String[] str = s.trim().split("\\s+");
+        String[] words = s.split(" +"); //Split string by one or more spaces
 
-        for (int i = str.length - 1; i > 0; i--) {
-            out.append(str[i]).append(" ");
+        StringBuilder sb = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            sb.append(words[i]); //add current word
+            sb.append(" ");  //add space after each word
         }
-        out.append(str[0]); // append the last word without extra space
-        return out.toString();
+        return sb.toString().trim();
     }
 
     public static void main(String[] args) {
